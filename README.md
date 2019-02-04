@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/GLMill/wombat_makergram.svg?branch=master)](https://travis-ci.com/GLMill/wombat_makergram)
 # README
 
 This README would normally document whatever steps are necessary to get the
