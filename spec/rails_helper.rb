@@ -12,9 +12,11 @@ require 'factory_girl_rails'
 require 'capybara/rspec'
 
 config.include Devise::Test::IntegrationHelpers, type: :feature
+
 config.include FactoryGirl::Syntax::Methods
 Capybara.javascript_driver = :poltergeist
 Capybara.server = :puma 
+
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -42,6 +44,7 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 RSpec.configure do |config|
+  config.include Devise::Test::ControllerHelpers, type: :controller
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
