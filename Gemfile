@@ -71,3 +71,5 @@ gem "devise", "~> 4.5"
 gem "travis-lint", "~> 2.0"
 
 gem "pg", "~> 1.1"
+
+gem "travis", "~> 1.8"
