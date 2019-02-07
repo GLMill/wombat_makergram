@@ -4,6 +4,10 @@ class PhotoController < ApplicationController
   end
 
   def store
-    render plain: params[:caption].inspect
+    post = current_user.posts.build
+    post.caption = params['caption']
+    post.image = params['image']
+    post.user = current_user
+    post.save
   end
 end
