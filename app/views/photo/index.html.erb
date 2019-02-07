@@ -23,5 +23,13 @@ https://pbs.twimg.com/media/DOXI0IEXkAAkokm.jpg
                </div>
                <p class="post-caption">Living my best life</p>
            </div>
+           <div>
+
+           <% @posts.each do |post|%>
+           <%= image_tag(post.image, style:'width:40%')%>
+
+           <% end %>
+           
+           </div>
        </div>
    </div>

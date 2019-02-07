@@ -9,5 +9,6 @@ class PhotoController < ApplicationController
     post.image = params['image']
     post.user = current_user
     post.save
+    redirect_to root
   end
 end
